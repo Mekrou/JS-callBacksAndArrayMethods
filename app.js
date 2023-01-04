@@ -11,3 +11,24 @@ numbers.forEach(print);
 numbers.forEach(function(element) {
     console.log(element);
 })
+
+//
+
+movies = [
+    {
+        name : 'Everything Everywhere All At Once',
+        score: 100,
+    },
+    {
+        name: 'Nemo',
+        score: 50,
+    },
+    {
+        name: 'Goldfish',
+        score: 90
+    }
+]
+
+movies.forEach(function(element) {
+    console.log(`${element.name} - ${element.score}/100`);
+});
