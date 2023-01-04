@@ -32,3 +32,14 @@ movies = [
 movies.forEach(function(element) {
     console.log(`${element.name} - ${element.score}/100`);
 });
+
+// map()
+
+const doubles = numbers.map(function(num) {
+    return num * 2;
+});
+
+const titles = movies.map(function(movie) {
+    return movie.name;
+})
+
