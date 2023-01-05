@@ -59,3 +59,11 @@ const square = x => {
 const rollDie = () => {
     return Math.floor(Math.random * 6) + 1;
 }
+
+// implicit return
+
+const rollD20 = () => (
+    Math.floor(Math.random * 20) + 1
+);
+
+const sum = (x, y ) => x + y;
