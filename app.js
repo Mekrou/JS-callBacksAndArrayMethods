@@ -43,3 +43,19 @@ const titles = movies.map(function(movie) {
     return movie.name;
 })
 
+// arrow functions
+
+// basic syntax
+const add = (x,y) => {
+    return x + y;
+}
+
+// with a single parameter
+const square = x => {
+    return x**2;
+}
+
+// with no parameters.
+const rollDie = () => {
+    return Math.floor(Math.random * 6) + 1;
+}
