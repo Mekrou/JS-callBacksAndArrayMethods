@@ -67,3 +67,13 @@ const rollD20 = () => (
 );
 
 const sum = (x, y ) => x + y;
+
+
+
+// const newMovies = movies.map(function (movie) {
+//     return `${movie.name} - ${movie.score / 10}}`;
+// });
+
+const newMovies = movies.map(movie => (
+    `${movie.name} - ${movie.score / 10}`
+));
