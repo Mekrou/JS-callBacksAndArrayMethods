@@ -141,3 +141,12 @@ if (result === true)
     console.log("Congrats! All students passed.");
 } else
     console.log("someone failed.....");
+
+// some() example
+
+// do we have a movie created after 2015?
+
+movies.some((movie) => {
+    if (movie.year >= 2015) return true;
+});
+
