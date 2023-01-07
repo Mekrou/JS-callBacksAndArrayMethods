@@ -18,15 +18,29 @@ movies = [
     {
         name : 'Everything Everywhere All At Once',
         score: 100,
+        year: 2020,
     },
     {
         name: 'Nemo',
         score: 50,
+        year: 2008,
     },
     {
         name: 'Goldfish',
-        score: 90
+        score: 90,
+        year: 1000,
+    },
+    {
+        name: 'badMovie',
+        score: 23,
+        year: 2016
+    },
+    {
+        name: 'Quarentined',
+        score: 50,
+        year: 2020,
     }
+    
 ]
 
 movies.forEach(function(element) {
@@ -94,10 +108,20 @@ const id = setInterval(() => {
 // why we have an id system.
 clearInterval(id);
 
+// filter() example
+
+// create an array of only even numbers
 const evenNumbers = numbers.filter((el) => {
     if (el % 2 == 0) return true;
 });
 
+// print our evenNumbers array.
 for (let num of evenNumbers) {
     console.log(num);
 }
+
+// let's create an array of every movie made in 2020.
+
+const coronaMovies = movies.filter((movie) => {
+    if (movie.year === 2020) return movie;
+})
