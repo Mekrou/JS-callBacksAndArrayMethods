@@ -125,3 +125,19 @@ for (let num of evenNumbers) {
 const coronaMovies = movies.filter((movie) => {
     if (movie.year === 2020) return movie;
 })
+
+// every & some examples
+
+const examScores = [87, 75, 89, 90, 93, 97, 95, 92, 91];
+
+const passingScore = 75;
+
+const result = examScores.every(score => {
+    if (score >= passingScore) return true;
+});
+
+if (result === true)
+{
+    console.log("Congrats! All students passed.");
+} else
+    console.log("someone failed.....");
