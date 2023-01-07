@@ -77,3 +77,7 @@ const sum = (x, y ) => x + y;
 const newMovies = movies.map(movie => (
     `${movie.name} - ${movie.score / 10}`
 ));
+
+setInterval(() => {
+    console.log(Math.random());
+}, 2000);
