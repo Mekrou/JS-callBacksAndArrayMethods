@@ -85,6 +85,11 @@ setTimeout(() => {
 }, 5000)
 
 // repeat a callback every interval specified in milliseconds.
-setInterval(() => {
+// we store the id so we can stop execution with clearInterval()
+const id = setInterval(() => {
     console.log(Math.random());
 }, 2000);
+
+// we may have multiple functions executing on intervals at once so that's
+// why we have an id system.
+clearInterval(id);
