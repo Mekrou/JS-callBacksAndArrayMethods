@@ -93,3 +93,11 @@ const id = setInterval(() => {
 // we may have multiple functions executing on intervals at once so that's
 // why we have an id system.
 clearInterval(id);
+
+const evenNumbers = numbers.filter((el) => {
+    if (el % 2 == 0) return true;
+});
+
+for (let num of evenNumbers) {
+    console.log(num);
+}
