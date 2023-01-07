@@ -78,6 +78,13 @@ const newMovies = movies.map(movie => (
     `${movie.name} - ${movie.score / 10}`
 ));
 
+
+// pause execution after a delay in milliseconds (with a callback)
+setTimeout(() => {
+    console.log("Are you still there?");
+}, 5000)
+
+// repeat a callback every interval specified in milliseconds.
 setInterval(() => {
     console.log(Math.random());
 }, 2000);
