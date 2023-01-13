@@ -150,3 +150,36 @@ movies.some((movie) => {
     if (movie.year >= 2015) return true;
 });
 
+
+// Reduce function
+
+const prices = [9.99, 4.99, 3.99, 0.99, 99.99, 1.43, 2.43];
+
+let total = 0;
+for (let price of prices) {
+    total += price;
+}
+
+
+let reduceTotal = prices.reduce( (accumulator, currentPrice) => {
+    return accumulator + currentPrice;
+});
+
+console.log(total);       // same #
+console.log(reduceTotal); // same #
+
+// okay but what about something practical?
+// lets try to find the maximum value in an array
+
+let maxValue = prices.reduce( (maxValue, currentPrice) => {
+    if (maxValue === undefined) {
+        maxValue = currentPrice;
+    }
+    if (currentPrice > maxValue)
+    {
+        maxValue = currentPrice;
+    }
+    return maxValue;
+})
+
+console.log(maxValue);
